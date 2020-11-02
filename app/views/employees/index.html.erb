@@ -1,0 +1,9 @@
+<h1>List of employees: </h1>
+
+<ul>
+    <% @employees.each do |em|%>
+        <li>
+            <%= link_to "#{em.first_name} #{em.last_name}", employee_path(em) %>
+        </li>
+    <% end %>
+</ul>
